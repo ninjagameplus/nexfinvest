@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registrazione | NexFinvest</title>
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="css/dashlite.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/global.css">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="vendor/animate/animate.css">
+    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
+</head>
+
+<body class="nk-body bg-white npc-general pg-auth">
+
+<div id="loading-area">
+    <div class="loader-box">
+        <div class="loader"></div>
+    </div>
+</div>
+
+<div class="nk-app-root">
+    <div class="nk-main">
+        <div class="nk-wrap">
+            <div class="nk-content">
+                <div class="nk-split nk-split-page nk-split-md">
+                    <div class="nk-split-content nk-block-area nk-block-area-column bg-primary">
+                        <div class="absolute-center">
+                            <div class="nk-block-content text-center text-white px-5">
+                                <h1 class="text-white mb-3">Registrati su NexFinvest</h1>
+                                <p>Crea il tuo account per iniziare a usare NexFinvest.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nk-split-content nk-block-area">
+                        <div class="nk-block nk-auth-body">
+                            <div class="brand-logo pb-4 text-center">
+                                <a href="index.html" class="logo-link">
+                                    <img class="logo-light" src="images/logo.png" alt="logo" style="height:50px;">
+                                </a>
+                            </div>
+
+                            <div class="card card-bordered">
+                                <div class="card-inner card-inner-lg">
+                                    <div class="nk-block-head">
+                                        <div class="nk-block-head-content">
+                                            <h4 class="nk-block-title">Benvenuto!</h4>
+                                            <div class="nk-block-des">
+                                                <p>Compila il modulo per creare il tuo account.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <form id="register-form">
+                                        <div class="form-group">
+                                            <label class="form-label" for="username">Username</label>
+                                            <input type="text" class="form-control form-control-lg" id="username" placeholder="Scegli uno username" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="form-label" for="email">Email</label>
+                                            <input type="email" class="form-control form-control-lg" id="email" placeholder="Inserisci la tua email" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="form-label" for="password">Password</label>
+                                            <input type="password" class="form-control form-control-lg" id="password" placeholder="Crea una password" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-lg btn-primary btn-block">Registrati</button>
+                                        </div>
+                                    </form>
+
+                                    <div class="form-note-s2 text-center pt-4">
+                                        Hai già un account? <a href="auth-login.html">Accedi</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Core JS -->
+<script src="js/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/swiper/swiper-bundle.min.js"></script>
+<script src="js/bundle.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/custom.js"></script>
+
+<!-- Script per nascondere loading spinner -->
+<script>
+window.addEventListener('load', function() {
+    var loader = document.getElementById('loading-area');
+    if (loader) {
+        loader.style.display = 'none';
+    }
+});
+</script>
+
+</body>
+</html>
