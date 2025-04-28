@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Accedi | NexFinvest</title>
+    <title>Registrazione | NexFinvest</title>
 
     <!-- Core CSS -->
     <link rel="stylesheet" href="css/dashlite.css">
@@ -35,8 +35,8 @@
                     <div class="nk-split-content nk-block-area nk-block-area-column bg-primary">
                         <div class="absolute-center">
                             <div class="nk-block-content text-center text-white px-5">
-                                <h1 class="text-white mb-3">Welcome to NexFinvest</h1>
-                                <p>Accedi con le tue credenziali per gestire il tuo account NexFinvest.</p>
+                                <h1 class="text-white mb-3">Registrati su NexFinvest</h1>
+                                <p>Crea il tuo account per iniziare a usare NexFinvest.</p>
                             </div>
                         </div>
                     </div>
@@ -53,14 +53,19 @@
                                 <div class="card-inner card-inner-lg">
                                     <div class="nk-block-head">
                                         <div class="nk-block-head-content">
-                                            <h4 class="nk-block-title">Welcome Back</h4>
+                                            <h4 class="nk-block-title">Benvenuto!</h4>
                                             <div class="nk-block-des">
-                                                <p>Inserisci email e password per accedere.</p>
+                                                <p>Compila il modulo per creare il tuo account.</p>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <form id="login-form">
+                                    <form id="register-form">
+                                        <div class="form-group">
+                                            <label class="form-label" for="username">Username</label>
+                                            <input type="text" class="form-control form-control-lg" id="username" placeholder="Scegli uno username" required>
+                                        </div>
+
                                         <div class="form-group">
                                             <label class="form-label" for="email">Email</label>
                                             <input type="email" class="form-control form-control-lg" id="email" placeholder="Inserisci la tua email" required>
@@ -68,16 +73,16 @@
 
                                         <div class="form-group">
                                             <label class="form-label" for="password">Password</label>
-                                            <input type="password" class="form-control form-control-lg" id="password" placeholder="Inserisci la tua password" required>
+                                            <input type="password" class="form-control form-control-lg" id="password" placeholder="Crea una password" required>
                                         </div>
 
                                         <div class="form-group">
-                                            <button type="submit" class="btn btn-lg btn-primary btn-block">Accedi</button>
+                                            <button type="submit" class="btn btn-lg btn-primary btn-block">Registrati</button>
                                         </div>
                                     </form>
 
                                     <div class="form-note-s2 text-center pt-4">
-                                        Non hai un account? <a href="auth-register.html">Registrati</a>
+                                        Hai già un account? <a href="auth-login.html">Accedi</a>
                                     </div>
                                 </div>
                             </div>
